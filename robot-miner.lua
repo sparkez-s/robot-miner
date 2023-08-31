@@ -28,4 +28,9 @@ function square(length)
     end
 end
 
-square(2)
+for x = 0, 4 do
+    square(2)
+    r.swing(0)
+    r.down()
+    r.turnLeft()
+end
