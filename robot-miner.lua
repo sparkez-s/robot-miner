@@ -22,10 +22,10 @@ function row(length, direction)
     break_rotate(direction)
 end
 
-function square(length, width)
-    for x = 0, width * 2 do
-        if x%2 == 0 then row(length, true) else row(length, false) end
+function square(length)
+    for x = 0, length * 2 do
+        if x%2 == 0 then row(length * 2, true) else row(length * 2, false) end
     end
 end
 
-square(2, 1)
+square(2)
